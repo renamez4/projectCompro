@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>File</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Python</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="https://www.python.org/">Python</a></li>
+							<li><a href="https://visualstudio.microsoft.com/downloads/">Visual Studio Code</a></li>
+							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>File and Exceptions</h1><hr>
+							<h2>FILE INPUT/OUTPUT<br></h2>
+							<p>ไฟล์ (File) คือสิ่งที่ใช้สำหรับเก็บข้อมูลบนคอมพิวเตอร์ในหน่วยเก็บข้อมูล คอมพิวเตอร์มีไฟล์หลากหลายประเภทขึ้นอยู่กับวัตถุประสงค์การใช้งานของมัน โดยทั่วไปแล้วไฟล์จะแบ่งออกเป็น 2 รูปแบบคือ Text file และ Binary file โดย Text file จะเก็บไฟล์ในรูปแบบของชุดตัวอักษรหรือข้อความที่มนุษย์สามารถอ่านเข้าใจได้ ในขณะที่ Binary file เก็บข้อมูลในรูปแบบ Binary form สำหรับคอมพิวเตอร์เพื่อทำงาน.</p><hr>
+							
+							<h2>FILE</h2>
+							<p>การเปิดไฟล์จะสร้างการเชื่อมต่อระหว่างไฟล์และโปรแกรม<br>
+                                •การเปิดไฟล์ที่ส่งออกมักจะสร้างไฟล์บนดิสก์และอนุญาตให้โปรแกรม
+                                เขียนข้อมูลลงไป เปิดไฟล์อินพุตเพื่อให้โปรแกรมอ่านข้อมูลจากแฟ้ม<br>
+                                •การประมวลผลไฟล์ - ในขั้นตอนนี้ข้อมูลจะเขียนไฟล์ (ถ้าส่งออก) หรืออ่าน
+                                ลบออกจากไฟล์ (ถ้าเป็นไฟล์อินพุต)<br>
+                                •ปิดไฟล์ - หลังจากโปรแกรมใช้ไฟล์คุณจะต้องปิดไฟล์
+                                การปิดไฟล์จะตัดการเชื่อมต่อไฟล์จากโปรแกรม</p>
+
+                            <h2>FILEWRITE.<span class="image main"><img src="images/demo.jpg" alt="" style="width:420px;height:200px;"/></span></h2>
+                            <h2>FILEREAD<span class="image main"><img src="images/read.jpg" alt="" style="width:300px;height:110px;"/></span></h2>
+
+                            <p>หากต้องการเปิดไฟล์ ให้ใช้ฟังก์ชัน open() ในตัว ฟังก์ชัน open()จะคืนค่ากลับมาเป็นค่าความยาวของข้อความ</p>
+                            <h2>READLINE<span class="image main"><img src="images/readline.jpg" alt="" style="width:300px;height:110px;"/></span></h2>
+                            <p>คุณสามารถใช้วิธี readline () เพื่อส่งค่าคืนกลับมา</p><hr>
+                            <h2>PROCESSING RECORDS</h2>
+                            <p>• Record: set of data that describes one item<br>
+                                • Field: single piece of data within a record<br>
+                                • Write record to sequential access file by writing the fields one after the other<br>
+                                 • Read record from sequential access file by reading each field until record complete</p><hr>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.facebook.com/Renamept" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>									
+									<li><a href="https://github.com/renamez4" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
